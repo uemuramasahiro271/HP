@@ -9,9 +9,6 @@ body {
 }
 
 header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .title {
@@ -20,7 +17,46 @@ header {
     font-size: 30px;
 }
 
-.slide {
+.slider {
     flex: 1;
-    background-image: url("../image/sea5.jpg");
+}
+
+.slider img {
+    height: 70vh;
+}
+
+.bx-wrapper {
+    max-height:70vh!important;
+    margin:0 auto;
+}
+
+.menubar {
+    margin-top: 30px;
+}
+
+ul.topnav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+    color: white;
+    background-color: gray;
+}
+ul.topnav li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+ul.topnav li a.active {
+	background-color: #da3c41;
+}
+ul.topnav li.right {
+	float: right;
 }

@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>HP</title>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+
 </head>
 <body>
     <header>
         <div class="title">民宿　めんそーれ</div>
-        <div class="slide">
+    </header>
+    <main>
+        <div class="slider">
+            <img src="image/sea1.jpg" alt="">
+            <img src="image/sea2.jpg" alt="">
+            <img src="image/sea3.jpg" alt="">
+            <img src="image/sea4.jpg" alt="">
+            <img src="image/sea5.jpg" alt="">
+            <img src="image/sea6.jpg" alt="">
         </div>
 
-    </header>
-
-    <div class="container">
-        <aside>
-            <ul>
-                <li>リスト1</li>
+        <nav class="menubar">
+            <ul class="topnav">
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
-            <div class="side_footer">サイドフッター</div>
-        </aside>
-        <main>メイン</main>
-    </div>
-
-
+        </nav>
+    </main>
     <footer></footer>
 </body>
 </html>
